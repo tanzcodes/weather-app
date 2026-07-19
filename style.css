@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: linear-gradient(160deg, #1e3a5f 0%, #3d6ba3 45%, #a8c8e8 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    color: #ffffff;
+  }
+  
+  .app {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(18px);
+    border-radius: 28px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  }
+  
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #cfe3f7;
+    margin-bottom: 6px;
+  }
+  
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  
+  #cityInput {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  #cityInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  #searchBtn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 14px;
+    background: #ffb347;
+    color: #26313f;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .result {
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .weather-icon {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+  
+  .temp {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .city-name {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #e6f0fa;
+  }
+  
+  .condition {
+    font-size: 14px;
+    color: #cfe3f7;
+    margin-top: 4px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+  }
+  
+  .detail-item {
+    text-align: center;
+  }
+  
+  .detail-label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cfe3f7;
+  }
+  
+  .detail-value {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  
+  .message {
+    font-size: 14px;
+    color: #e6f0fa;
+  }
+  
+  .loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffb347;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
